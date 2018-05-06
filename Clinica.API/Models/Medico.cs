@@ -18,4 +18,5 @@ namespace Clinica.API.Models
             return ! string.IsNullOrEmpty(Crm);
         }
 
+    }
 }
