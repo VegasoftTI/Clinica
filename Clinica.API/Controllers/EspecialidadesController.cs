@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Clinica.API.Data;
 using Clinica.API.Models;
+using Clinica.API.Dtos;
 using Clinica.API.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,11 @@ namespace Clinica.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+
+            // var list = await _unitOfWork.GetRepositoryAsync<Especialidade>().GetList().Items;
+
+            // var model = Mapper.Map<IEnumerable<Dtos.EspecialidadeDTO>>(list);
+
             var especialidades = await _contexto.Especialidades.ToListAsync();
             return Ok(especialidades);
 

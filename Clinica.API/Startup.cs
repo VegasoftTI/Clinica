@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Clinica.API.Data;
 using Clinica.Data.DependencyInjection;
-
+using Threenine.Map;
 
 namespace Clinica.API
 {
@@ -41,15 +41,15 @@ namespace Clinica.API
         {
 
             // Use Threenine.Map to wire up the Automapper mappings
-            //MapConfigurationFactory.Scan<Startup>();
+            MapConfigurationFactory.Scan<Startup>();
 
             // Ensure the Database is created
-            /* 
+            
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 serviceScope.ServiceProvider.GetService<DataContexto>().Database.EnsureCreated();
             } 
-            */
+           
 
 
             if (env.IsDevelopment())
