@@ -25,19 +25,26 @@ namespace Clinica.API.Controllers
             _unitOfWork = unitOfWork;
         }
 
- // GET api/values
+         // GET api/values
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-
-            // var list = await _unitOfWork.GetRepositoryAsync<Especialidade>().GetList().Items;
-
-            // var model = Mapper.Map<IEnumerable<Dtos.EspecialidadeDTO>>(list);
+            
 
             var especialidades = await _contexto.Especialidades.ToListAsync();
             return Ok(especialidades);
 
         }
+            /* 
+                // GET api/values
+                [HttpGet]
+                public async Task<IActionResult> Get()
+                {
+                    var especialidades = await _contexto.Especialidades.ToListAsync();
+                    return Ok(especialidades);
+
+                }
+            */
       
         // GET api/values/5
         [HttpGet("{id}")]

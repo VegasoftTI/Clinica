@@ -8,5 +8,6 @@ namespace Clinica.API.Repository.Interfaces
     {
         DbContext Contexto { get;  }
         void Commit();
+        object GetRepository<T>();
     }
 }
