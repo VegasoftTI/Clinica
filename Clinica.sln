@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.API", "Clinica.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Data", "Clinica.Data\Clinica.Data.csproj", "{0B95358E-7ABC-4BE2-8442-B907919CB1CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinica.Web", "Clinica.Web\Clinica.Web.csproj", "{22E8349A-2F3B-4F37-9C80-EB4B495C8718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{0B95358E-7ABC-4BE2-8442-B907919CB1CB}.Release|x64.Build.0 = Release|x64
 		{0B95358E-7ABC-4BE2-8442-B907919CB1CB}.Release|x86.ActiveCfg = Release|x86
 		{0B95358E-7ABC-4BE2-8442-B907919CB1CB}.Release|x86.Build.0 = Release|x86
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|x64.ActiveCfg = Debug|x64
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|x64.Build.0 = Debug|x64
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|x86.ActiveCfg = Debug|x86
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Debug|x86.Build.0 = Debug|x86
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|x64.ActiveCfg = Release|x64
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|x64.Build.0 = Release|x64
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|x86.ActiveCfg = Release|x86
+		{22E8349A-2F3B-4F37-9C80-EB4B495C8718}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
